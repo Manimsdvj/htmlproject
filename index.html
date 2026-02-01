@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First Web Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0d6efd;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 600px;
+            margin: auto;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        button {
+            background-color: #0d6efd;
+            color: white;
+            border: none;
+            padding: 10px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0b5ed7;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #ddd;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to My Website</h1>
+    <p>Simple HTML, CSS & JavaScript page</p>
+</header>
+
+<main>
+    <div class="card">
+        <h2>Hello 👋</h2>
+        <p>
+            This is a basic HTML web page example.
+            You can edit this code and learn web development step by step.
+        </p>
+
+        <button onclick="showMessage()">Click Me</button>
+        <p id="message"></p>
+    </div>
+</main>
+
+<footer>
+    <p>© 2026 My Website</p>
+</footer>
+
+<script>
+    function showMessage() {
+        document.getElementById("message").innerText =
+            "Button clicked! JavaScript is working 🚀";
+    }
+</script>
+
+</body>
+</html>
+
